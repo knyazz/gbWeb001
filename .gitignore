@@ -1,0 +1,13 @@
+.env
+*.pyc
+DEBUG
+local_settings.py
+.cache
+.coverage
+.DS_STORE
+__pycache__
+_SpecRunner.html
+locale/
+.idea
+node_modules/
+bower_components/
