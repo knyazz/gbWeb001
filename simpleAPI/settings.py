@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+SITE_ID = 1
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,6 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+
+    'django_filters',
+    'rest_framework',
+
+    'webshops'
 ]
 
 MIDDLEWARE = [
@@ -63,6 +70,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'debug': DEBUG
         },
     },
 ]
@@ -118,3 +126,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#celery
+BROKER_URL = 'amqp://guest:guest@127.0.0.1:5672/'
+CELERY_ACCEPT_CONTENT = ['json', 'pickle']
+CELERY_TASK_SERIALIZER = 'pickle'
+CELERY_RESULT_SERIALIZER = 'json'

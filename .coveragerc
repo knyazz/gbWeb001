@@ -1,4 +1,11 @@
 [run]
-omit = *migrations*
 branch = True
 source = .
+
+
+omit =
+    *migrations*
+    manage.py
+    simpleAPI/wsgi.py
+    simpleAPI/testtools.py
+    *tests*

@@ -16,8 +16,16 @@ pytz==2018.7
 scandir==1.9.0
 six==1.11.0
 vine==1.1.4
+ipaddress=1.0.22
+python-dateutil=2.7.5
+text-unidecode=1.2
+Faker=1.0.0
+factory-boy=2.11.1
+mock=2.0.0
+pbr=5.1.1
 
 celery==4.2.1
 
 Django==1.11.17
 djangorestframework==3.9.0
+django-filter==1.1.0
