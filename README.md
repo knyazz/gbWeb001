@@ -1,11 +1,11 @@
 # gbWeb001
 
 ```
-mkdir gbWebinar001
+cd gbWeb001
 
-mkvirtualenv -a /Users/smirnovev/projects/gbWebinar001 -p /usr/local/bin/python -r requirements.txt gbWebinar001
+mkvirtualenv -a /Users/smirnovev/projects/gbWeb001 -p /usr/local/bin/python -r requirements.txt gbWeb001
 
-django-admin startproject simpleAPI .
+python manage.py migrate
 
-python manage.py startapp webshops
+pytest
 ```
